@@ -31,19 +31,21 @@ const questionsData = [
     },
     {
         id: "q3",
-        question: "De,mfoewlsm",
+        question: "Проектті тоқтату үшін не істейді ?",
         type: 'input',
         options: [],
     },
     {
         id: "q4",
-        question: "",
-        options: ["", "", "", ""],
+        question: "Проект создать ету үшін қандай команда жазу керек ?",
+        type: 'input',
+        options: [],
     },
     {
         id: "q5",
-        question: "",
-        options: ["", "", "", ""],
+        question: "useState деген не? Не үшін қажет?(өз сөзінмен)",
+        type: 'input',
+        options: [],
     },
 ];
 
@@ -67,7 +69,6 @@ function Exam() {
     const [answers, setAnswers] = useState(loadAnswers);
     const [code, setCode] = useState("");
 
-    // Автосохранение ответов с debounce
     useEffect(() => {
         if (timeoutRef.current) clearTimeout(timeoutRef.current);
 

@@ -6,20 +6,15 @@ import "./CodeTask.css";
 const STORAGE_KEY = "codetask_code";
 
 const TEMPLATE = `export default function Todo() {
-  const [tasks, setTasks] = React.useState([]);
 
   function addTask() {
-    const newTask = prompt("Enter task:");
-    if (newTask) setTasks([...tasks, newTask]);
   }
 
   return (
     <div>
       <h2>Todo List</h2>
       <ul>
-        {tasks.map((task, i) => (
-          <li key={i}>{task}</li>
-        ))}
+      
       </ul>
       <button onClick={addTask}>Add</button>
     </div>
