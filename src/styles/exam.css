@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.exam-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.exam-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.question {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.question h3 {
+  margin-bottom: 10px;
+}
+
+.option {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background: #334155;
+}
+
+.option.selected {
+  background: #38bdf8;
+  color: black;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #16a34a;
+}
+
+.code-task {
+  margin-top: 25px;
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.editable-area {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.locked-area {
+  opacity: 0.5;
+}
