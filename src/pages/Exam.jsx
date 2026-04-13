@@ -21,29 +21,29 @@ const questionsData = [
     },
     {
         id: "q2",
-        question: "run dev командасы не істейді ?",
+        question: "npm run dev командасы не істейді ?",
         options: [
-            "Проектті запускать етеді",
-            "Көп нәрсе",
-            "Дым",
-            "Проектті тоқтатады",
+            "Проектті запускать ету үшін",
+            "Проектті тоқтату үшін",
+            "Проекттің папкасына кіріп запускать ету үшін",
+            "ДЫМ",
         ],
     },
     {
         id: "q3",
-        question: "Проектті тоқтату үшін не істейді ?",
+        question: "Проекттің папкасына кіру командасы",
         type: 'input',
         options: [],
     },
     {
         id: "q4",
-        question: "Проект создать ету үшін қандай команда жазу керек ?",
+        question: "onCLick неге қолдануға болады ?",
         type: 'input',
         options: [],
     },
     {
         id: "q5",
-        question: "useState деген не? Не үшін қажет?(өз сөзінмен)",
+        question: "Node.js деген не ?(өз сөзбен)",
         type: 'input',
         options: [],
     },
@@ -90,7 +90,7 @@ function Exam() {
     async function handleSubmit() {
         try {
             await addDoc(collection(db, "submissions"), {
-                nickname: studentId,
+                studentId,
                 answers,
                 code,
                 createdAt: serverTimestamp(),

@@ -5,22 +5,15 @@ import "./CodeTask.css";
 
 const STORAGE_KEY = "codetask_code";
 
-const TEMPLATE = `export default function Todo() {
-
-  function addTask() {
-  }
-
+const TEMPLATE = `function Card() {
   return (
-    <div>
-      <h2>Todo List</h2>
-      <ul>
-      
-      </ul>
-      <button onClick={addTask}>Add</button>
+    <div className="card">
+    
     </div>
-  );
+  )
 }
-`;
+
+export default Card`;
 
 const CDN = {
     react: "https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.min.js",
